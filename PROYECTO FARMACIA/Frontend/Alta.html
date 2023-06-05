@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Alta.css">
+    <script type="text/javascript" src="Alta.js"></script>
+    <title>Alta de chips</title>
+</head>
+
+<body onload="Medicine(); Patient()">
+    <h1>Alta de chips</h1>
+    <form id="altaForm" onsubmit="return false;">
+        <input type="text" id="xipIdInput" placeholder="ID Físico del Xip" required>
+        <select id="patientselect" required>
+            <option value="" disabled selected>Pacientes</option>
+        </select>
+        <select id="medicineselect" required>
+            <option value="" disabled selected>Medicamentos</option>
+        </select>
+        <input type="date" id="dateInput" required>
+        <button type="submit" onclick="send()">Enviar</button>
+        <button onclick="window.location.href = 'Gestion.html';">Gestion</button>
+    </form>
+    
+</body>
+
+</html>
